@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info Docentes · Musicala</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo.jpg" alt="Logo Musicala" class="brand-logo" />
+      <div>
+        <h1>Info Pago Docentes</h1>
+        <p>Consulta rápida · Musicala</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-copy">
+        <span class="eyebrow">Consulta interna</span>
+        <h2>Valores y recordatorios para pago a docentes</h2>
+        <p>
+          Una vista simple para consultar tarifas base, bonificaciones y pagos
+          adicionales sin ponerse a buscar en documentos perdidos por la civilización.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card info-card">
+        <div class="card-head">
+          <span class="icon">🎵</span>
+          <h3>Información general</h3>
+        </div>
+        <ul class="clean-list">
+          <li>Escuela de formación artística</li>
+          <li>Metodología CREA</li>
+          <li>Clases virtuales, sede y hogar</li>
+          <li>Respaldo y acompañamiento Musicala</li>
+        </ul>
+      </article>
+
+      <article class="card info-card">
+        <div class="card-head">
+          <span class="icon">💰</span>
+          <h3>Valores base</h3>
+        </div>
+
+        <div class="rates" id="ratesList"></div>
+      </article>
+
+      <article class="card info-card">
+        <div class="card-head">
+          <span class="icon">✨</span>
+          <h3>Bonificaciones</h3>
+        </div>
+
+        <div class="bonus-list" id="bonusList"></div>
+      </article>
+
+      <article class="card info-card highlight-card">
+        <div class="card-head">
+          <span class="icon">📌</span>
+          <h3>Pagos adicionales</h3>
+        </div>
+
+        <p class="highlight-copy">
+          Estos valores deben estar siempre visibles para recordarlos fácil.
+        </p>
+
+        <div class="admin-list" id="adminList"></div>
+      </article>
+    </section>
+
+    <section class="card quick-note">
+      <h3>Resumen rápido</h3>
+      <div class="summary" id="summaryBox"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
